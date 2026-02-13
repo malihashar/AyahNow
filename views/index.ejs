@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello</title>
+    <title>Ayah Now</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1> Random Ayah Generator </h1>
+    <button onclick="getayah()">Generate Ayah</button>
+    <div id="result" style="margin-top:20px;"></div>
+    <script>
+      async function getayah(){
+        const res= await fecth("/")
+        const data= await res.json
+      
+      document.getElementById("result").innerHTML = `
+        <h2>${data.surah} (${data.ayahNumber})</h2>
+        <p style="font-size:24px;">${data.arabicText}</p>
+        <p>${data.englishText}</p>
+      `;
+    }
+    </script>
+
   </body>
 </html>
