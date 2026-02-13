@@ -1,77 +1,128 @@
-
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* Page background */
 body {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  height: 100vh;
+  background: #0f172a;
+  color: #e2e8f0;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  padding-top: 70px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0f172a;
+  border-bottom: 1px solid #1f2937;
 }
 
-/* Main card */
-.container {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 40px;
-  border-radius: 15px;
-  width: 90%;
-  max-width: 600px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+.nav-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Title */
-h1 {
-  margin-bottom: 20px;
-  font-size: 32px;
-}
-
-/* Button */
-button {
-  background: #00c9a7;
-  border: none;
-  padding: 12px 25px;
+.logo {
+  font-weight: 600;
   font-size: 16px;
-  color: white;
+  color: #e2e8f0;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #94a3b8;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #e2e8f0;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  padding: 50px 40px;
+  background: #111827;
+  border-radius: 16px;
+  border: 1px solid #1f2937;
+  text-align: center;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  letter-spacing: -0.3px;
+}
+
+button {
+  background: #1f2937;
+  color: #e5e7eb;
+  border: 1px solid #2d3748;
+  padding: 10px 18px;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
+  font-size: 14px;
+  transition: background 0.2s ease, transform 0.1s ease;
 }
 
 button:hover {
-  background: #00a58c;
+  background: #2d3748;
 }
 
-/* Result area */
-.result {
-  margin-top: 25px;
+button:active {
+  transform: scale(0.98);
 }
 
-/* Surah title */
-.result h2 {
-  margin-bottom: 15px;
+#result {
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #1f2937;
+  animation: fadeIn 0.3s ease;
+}
+
+#result h2 {
   font-size: 20px;
-  color: #aeefff;
+  font-weight: 500;
+  color: #94a3b8;
+  margin-bottom: 20px;
 }
 
-/* Arabic text */
 .arabic {
-  font-size: 28px;
-  line-height: 1.8;
+  font-family: "Amiri", "Scheherazade New", serif;
+  font-size: 32px;
+  line-height: 2.2;
   direction: rtl;
-  margin-bottom: 15px;
+  text-align: right;
+  margin-bottom: 28px;
+  letter-spacing: 0.5px;
 }
 
-/* English text */
 .english {
-  font-size: 18px;
-  color: #e0e0e0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #cbd5e1;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

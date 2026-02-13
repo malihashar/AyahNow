@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
+  
   <head>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
     <title>Ayah Now</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link  rel='stylesheet' href='/stylesheets/style.css' />
+    
   </head>
   <body>
+    <nav class="navbar">
+  <div class="nav-inner">
+    <span class="logo">Ayah Now</span>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+    </div>
+  </div>
+</nav>
     <div class="container">
     <h1> Random Ayah Generator </h1>
     <button onclick="getayah()">Generate Ayah</button>
+    <a href="/surah"><button>Surah Ayah Generator</button></a>
     <div id="result" style="margin-top:20px;"></div>
     </div>
     <script>

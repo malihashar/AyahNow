@@ -26,4 +26,8 @@ router.get('/random-ayah', async function(req, res, next) {
  
 });
 
+router.get('/surah', async function(req,res){
+  res.render('surah')
+})
+
 module.exports = router;
