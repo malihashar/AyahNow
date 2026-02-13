@@ -5,19 +5,21 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+    <div class="container">
     <h1> Random Ayah Generator </h1>
     <button onclick="getayah()">Generate Ayah</button>
     <div id="result" style="margin-top:20px;"></div>
+    </div>
     <script>
       async function getayah(){
-        const res= await fecth("/")
-        const data= await res.json
+        const res= await fetch("/random-ayah")
+        const data= await res.json();
       
       document.getElementById("result").innerHTML = `
-        <h2>${data.surah} (${data.ayahNumber})</h2>
-        <p style="font-size:24px;">${data.arabicText}</p>
-        <p>${data.englishText}</p>
-      `;
+  <h2>${data.surah} (${data.ayahNumber})</h2>
+  <p class="arabic">${data.arabicText}</p>
+  <p class="english">${data.englishText}</p>
+`;
     }
     </script>
 

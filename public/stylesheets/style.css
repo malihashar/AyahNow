@@ -1,8 +1,77 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+/* Page background */
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Main card */
+.container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Title */
+h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+/* Button */
+button {
+  background: #00c9a7;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00a58c;
+}
+
+/* Result area */
+.result {
+  margin-top: 25px;
+}
+
+/* Surah title */
+.result h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #aeefff;
+}
+
+/* Arabic text */
+.arabic {
+  font-size: 28px;
+  line-height: 1.8;
+  direction: rtl;
+  margin-bottom: 15px;
+}
+
+/* English text */
+.english {
+  font-size: 18px;
+  color: #e0e0e0;
 }
