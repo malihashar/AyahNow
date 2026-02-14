@@ -8,24 +8,38 @@
 /* Container already centers things */
 .container input {
   width: 200px;
-  padding: 12px 15px;
-  font-size: 16px;
-  border: 2px solid #ddd;
+  padding: 10px 18px;
+  font-size: 14px;
+  background: #1f2937;
+  color: #e5e7eb;
+  border: 1px solid #2d3748;
   border-radius: 8px;
   outline: none;
-  transition: all 0.2s ease;
   margin-right: 10px;
+  transition: background 0.2s ease, transform 0.1s ease;
 }
 
-/* Focus effect */
-.container input:focus {
-  border-color: #2c7be5;
-  box-shadow: 0 0 6px rgba(44, 123, 229, 0.3);
-}
-
-/* Placeholder styling */
+/* placeholder color */
 .container input::placeholder {
-  color: #999;
+  color: #94a3b8;
+}
+
+/* hover like button */
+.container input:hover {
+  background: #2d3748;
+}
+
+/* focus effect */
+.container input:focus {
+  border-color: #3b82f6;
+}
+
+
+.container form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 
