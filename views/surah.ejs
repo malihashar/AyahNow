@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link  rel='stylesheet' href='/stylesheets/style.css' />
-    <title>Surah Ayah Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <title>Surah Ayah Generator</title>
 </head>
 <body>
-    
+  <nav class="navbar">
+    <div class="nav-inner">
+      <span class="logo">Ayah Now</span>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="#">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <form action="/surah-ayah" method="GET">
+      <input name="surah" placeholder="What Surah:" required>
+      <button type="submit">Find Ayah</button>
+    </form>
+
+    <div id="result">
+      <% if (error) { %>
+        <p style="color:red;"><%= error %></p>
+      <% } %>
+
+      <% if (ayah) { %>
+        <h2><%= surah %> — Ayah <%= ayahNumber %></h2>
+
+        <div style="white-space: pre-line; font-size: 20px; margin-top: 10px;">
+          <%= ayah %>
+        </div>
+      <% } %>
+    </div>
+  </div>
 </body>
 </html>

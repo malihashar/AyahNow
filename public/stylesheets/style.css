@@ -5,6 +5,30 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+/* Container already centers things */
+.container input {
+  width: 200px;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease;
+  margin-right: 10px;
+}
+
+/* Focus effect */
+.container input:focus {
+  border-color: #2c7be5;
+  box-shadow: 0 0 6px rgba(44, 123, 229, 0.3);
+}
+
+/* Placeholder styling */
+.container input::placeholder {
+  color: #999;
+}
+
+
 body {
   background: #0f172a;
   color: #e2e8f0;
