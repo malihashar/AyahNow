@@ -14,7 +14,7 @@
 - 🔊 Optional audio recitation support  
 - ⚡ Fast and simple setup  
 
----
+--
 
 ## 🚀 Installation
 
