@@ -6,7 +6,6 @@
 
 ---
 
-
 ## ✨ Features
 
 - 📖 Retrieve ayahs by Surah and Ayah number  
