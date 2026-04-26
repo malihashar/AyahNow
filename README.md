@@ -4,6 +4,9 @@
 
 > Built to make accessing the words of the Qur’an simple, fast, and accessible.
 
+
+
+
 ---
 ## ✨ Features
 - 📖 Retrieve ayahs by Surah and Ayah number  
