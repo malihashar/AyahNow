@@ -3,8 +3,6 @@
 **AyahNow** is a simple and powerful application that allows users to instantly access Quranic ayahs (verses) in real-time. It provides clean text output and can be extended to include translations, audio recitations, and more.
 
 > Built to make accessing the words of the Qur’an simple, fast, and accessible.
-
-
 ---
 ## ✨ Features
 - 📖 Retrieve ayahs by Surah and Ayah number  
