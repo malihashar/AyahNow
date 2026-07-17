@@ -23,7 +23,6 @@ Navigate into the project directory:
 ```bash
 cd AyahNow
 ```
-
 Install dependencies (depending on your stack):
 
 ### If using Node.js:
