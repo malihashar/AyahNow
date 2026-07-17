@@ -18,6 +18,7 @@ Clone the repository:
 git clone https://github.com/malihashar/AyahNow.git
 ```
 
+
 Navigate into the project directory:
 
 ```bash
