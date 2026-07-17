@@ -10,7 +10,6 @@
 - 🌍 Easily extendable for translations  
 - 🔊 Optional audio recitation support  
 - ⚡ Fast and simple setup  
-
 --
 ## 🚀 Installation
 Clone the repository:
