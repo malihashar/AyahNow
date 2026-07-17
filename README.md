@@ -12,7 +12,6 @@
 - ⚡ Fast and simple setup  
 
 --
-
 ## 🚀 Installation
 Clone the repository:
 ```bash
