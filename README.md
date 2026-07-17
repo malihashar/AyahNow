@@ -16,8 +16,7 @@
 Clone the repository:
 ```bash
 git clone https://github.com/malihashar/AyahNow.git
-```
-
+``
 
 Navigate into the project directory:
 
